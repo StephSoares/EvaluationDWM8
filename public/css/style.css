@@ -94,9 +94,9 @@ header {
   right : 15%;
   z-index:2
 }
-/*  Style create.blade.php
-------------------------------
-           Formulaire
+/*  Style create.blade.php et update.blade.php
+-----------------------------------------------
+                  Formulaire
 */
 .title-3 {
   text-align: center;

@@ -26,24 +26,40 @@
             <td>{{ $instrument->price }}</td>
             <td>{{ $instrument->number }}</td>
             <td>{{ $instrument->storage->storage }}</td>
-            @if ($instrument->classification)
+            @if ($instrument->classifications)
               <td>
-                @foreach ($instrument->classification as $classification)
+                @foreach ($instrument->classifications as $classification)
                   {{ $classification->classification }}
                 @endforeach
               </td>
             @else
               <td>Pas de Classifications Spécifiées</td>
             @endif
-            @if ($instrument->color)
+            @if ($instrument->colors)
               <td>
-                @foreach ($instrument->color as $color)
+                @foreach ($instrument->colors as $color)
                   {{ $color->color }}
                 @endforeach
               </td>
             @else
               <td>Pas de Couleurs Spécifiées</td>
             @endif
+            <td>
+             <form class ="delete_form" action="/instrument/delete/{{$instrument->id}}" method="GET">
+               {{ csrf_field() }}
+                <button type="submit" class="btn btn-outline-danger">
+                   <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </button>
+             </form>
+           </td>
+           <td>
+            <form class ="update_form" action="/instrument/update/{{$instrument->id}}" method="GET">
+              {{ csrf_field() }}
+               <button type="submit" class="btn btn-outline-success">
+                  <i class="fa fa-pencil" aria-hidden="true"></i>
+               </button>
+            </form>
+          </td>
         </tr>
       @endforeach
     </tbody>

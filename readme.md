@@ -25,3 +25,15 @@ Mon tableau ne s'affiche pas aussi car ça me met une autre erreur :
 
 J'ai fait le test du dd($request) ... toutes mes variables sont corrects sauf celle de classification et de color car c'est justement ses 2 variables qui mettent une erreur au niveau de l'insertion.
 Rappel : L'insertion se passe correctement bien dans la base de données sauf au niveau de ma table instrument_classification et instrument_color.
+
+J'ai réglé le soucis en faisant dans Instrument.php :
+
+return $this->belongsToMany('App\Classification', 'instrument_classification');
+
+De même que pour color !
+
+- Création du delete et de l'update.
+
+Pour vendredi :
+
+Création d'une barre de recherche qui affiche selon le numéro de stock de l'instrument, les infos correspondant à l'instrument. 

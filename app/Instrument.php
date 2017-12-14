@@ -13,10 +13,10 @@ class Instrument extends Model
     }
     public function classifications()
     {
-      return $this->belongsToMany('App\Classification');
+      return $this->belongsToMany('App\Classification', 'instrument_classification');
     }
     public function colors()
     {
-      return $this->belongsToMany('App\Color');
+      return $this->belongsToMany('App\Color', 'instrument_color');
     }
 }
