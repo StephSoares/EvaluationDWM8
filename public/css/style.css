@@ -1,0 +1,149 @@
+/*  Style accueil.blade.php
+-------------------------------
+          Header
+*/
+header {
+  background-color: #25A7A5;
+  padding: 30px;
+}
+.flex-header h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 40px;
+}
+.flex-header ul {
+  font-family: 'Hind', sans-serif;
+}
+.flex-header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.flex-header ul li {
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+  color: black;
+
+}
+.flex-header a {
+  text-decoration: none;
+  color: black;
+}
+.flex-header a:hover {
+  text-decoration: none;
+  color: white;
+}
+/*  Style accueil.blade.php
+------------------------------
+           Body
+*/
+.title h1 {
+  text-align: center;
+  font-family: 'Rubik Mono One', sans-serif;
+  margin-top: 20px;
+  font-size: 70px;
+}
+.title-2 h2 {
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  margin-top: 20px;
+}
+.title-3 h3 {
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.image-back {
+  width: 100%;
+}
+.row {
+  position: relative;
+  margin-top: 10%;
+}
+.image-back {
+  z-index: 1;
+  box-shadow: 1px 1px 12px #555;
+}
+#texte .text1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 35px;
+  color : white;
+  text-shadow: 1px 1px 12px #555;
+  position: absolute;
+  top: 20%;
+  left : 15%;
+  z-index:2
+
+}
+#texte .text2 {
+  font-family: 'Anton', sans-serif;;
+  font-size: 35px;
+  color : white;
+  text-shadow: 1px 1px 12px #555;
+  position: absolute;
+  top: 20%;
+  right : 15%;
+  z-index:2
+}
+/*  Style create.blade.php
+------------------------------
+           Formulaire
+*/
+.title-3 {
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  margin-top: 5%;
+}
+.background {
+  background-color: #10ACAB;
+  background-image: url(/images/basse.png);
+  background-repeat: no-repeat;
+  background-size: auto 60%;
+  background-position: bottom right;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  height: 500px;
+  box-shadow: 1px 1px 12px #555;
+}
+.formulaire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+.flex-group {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/*  Style table.blade.php
+------------------------------
+           Tableau
+*/
+.title-4 {
+  text-align: center;
+  font-family: 'Hind', sans-serif;
+  margin-top: 5%;
+}
+.tableau {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table {
+  text-align: center;
+  width: 1000px;
+}
