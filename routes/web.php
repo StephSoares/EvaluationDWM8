@@ -14,10 +14,12 @@
 Route::get('/', 'BaseController@index');
 Route::get('/create', 'CreateController@index');
 Route::get('/table', 'TableController@index');
+Route::get('/search', 'SearchController@index');
 
 Route::post('/instrument/insert', 'InstrumentController@insertOne');
 Route::post('/instrument/update', 'InstrumentController@updateOneAction');
 
 
+Route::get('/instrument/search', 'InstrumentController@searchAction');
 Route::get('/instrument/delete/{id}', 'InstrumentController@deleteOne');
 Route::get('/instrument/update/{id}', 'InstrumentController@updateOne');

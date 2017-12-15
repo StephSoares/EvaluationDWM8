@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Accueil')
+@section('title', 'Music Stock')
 @section('main')
   <div class="title-3">
     <h1>Modification des infos l'instrument choisi :</h1>

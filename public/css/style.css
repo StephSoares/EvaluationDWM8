@@ -4,14 +4,33 @@
 */
 header {
   background-color: #25A7A5;
-  padding: 30px;
+  padding: 10px;
+}
+.head_link {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  text-align: center;
+}
+.logo-1 {
+  display: flex;
+  justify-content: flex-start;
+  width: 5%;
+}
+.logo-1 img {
+  width: 100%;
+}
+.title-head {
+  display: flex;
+  justify-content: flex-start;
+  width: 95%;
 }
 .flex-header h3 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Righteous', cursive;
   font-size: 40px;
 }
 .flex-header ul {
@@ -45,18 +64,31 @@ header {
 ------------------------------
            Body
 */
+body {
+  background: url(/images/vintage.jpg) repeat-x bottom ;
+  height: 1200px;
+}
+.title {
+  text-shadow: 1px 1px 12px #555;
+}
 .title h1 {
   text-align: center;
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Righteous', cursive;
   margin-top: 20px;
-  font-size: 70px;
+  font-size: 100px;
+}
+.image1{
+  width: 150px;
+  color: #10ACAB;
+  filter: drop-shadow(1px 1px 12px #555);
 }
 .title-2 h2 {
   text-align: center;
   font-family: 'Hind', sans-serif;
   margin-top: 20px;
 }
-.title-3 h3 {
+
+.title-6 h3 {
   text-align: center;
   font-family: 'Hind', sans-serif;
   margin-top: 20px;
@@ -67,7 +99,7 @@ header {
 }
 .row {
   position: relative;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .image-back {
   z-index: 1;
@@ -94,6 +126,19 @@ header {
   right : 15%;
   z-index:2
 }
+#texte .text3 {
+  font-family: 'Anton', sans-serif;;
+  font-size: 35px;
+  color : white;
+  text-shadow: 1px 1px 12px #555;
+  position: absolute;
+  top : 20%;
+  left : 30%;
+  z-index:2
+}
+.text-center img {
+  width: 50%;
+}
 /*  Style create.blade.php et update.blade.php
 -----------------------------------------------
                   Formulaire
@@ -105,7 +150,7 @@ header {
 }
 .background {
   background-color: #10ACAB;
-  background-image: url(/images/basse.png);
+  background-image: url(/images/drums.png);
   background-repeat: no-repeat;
   background-size: auto 60%;
   background-position: bottom right;
@@ -133,6 +178,16 @@ header {
 ------------------------------
            Tableau
 */
+.head {
+  background-color: #10ACAB;
+}
+.table-bordered {
+  color: black;
+}
+.background_body {
+  background-color: #63D8D2;
+  background-size: 100% 100%;
+}
 .title-4 {
   text-align: center;
   font-family: 'Hind', sans-serif;
@@ -146,4 +201,25 @@ header {
 .table {
   text-align: center;
   width: 1000px;
+}
+/*   Style search.blade.php
+------------------------------
+     Barre de recherche
+*/
+
+.navbar-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.navbar-form .custom-search-form {
+  width: 400px;
+  height: 50px;
+}
+
+.navbar-form .button {
+  background-color: #10ACAB;
+  width:50px;
+  height:50px;
 }

@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Accueil')
+@section('title', 'Music Stock')
 @section('main')
 <div class="title-4">
   <h3>Voici le stock de votre magasin :</h3>

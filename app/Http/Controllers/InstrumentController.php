@@ -64,4 +64,10 @@ class InstrumentController extends Controller
       $instrument->save();
       return redirect('/table');
     }
+    public function searchAction(Request $request, $id)
+    {
+      $instrument = Instrument::find($id);
+      $instrument->storage_id = $request->storage;
+      return redirect('/search');
+    }
 }

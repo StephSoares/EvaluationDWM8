@@ -1,6 +1,6 @@
 @extends('layouts.base')
 
-@section('title', 'Accueil')
+@section('title', 'Music Stock')
 @section('main')
   <div class="title-3">
     <h1>Insérer votre instrument de musique</h1>
@@ -18,7 +18,7 @@
         </div>
         <div class="flex-group">
           {{{ Form::label('N° du stock :') }}}
-          {{{ Form::text('number') }}}
+          {{{ Form::number('number') }}}
         </div>
         <div class="flex-group">
           {{{ Form::label('En stock :') }}}
