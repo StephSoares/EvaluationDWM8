@@ -24,7 +24,7 @@ Message d'erreur du type :
 J'ai un petit soucis au niveau de l'insertion, cela donne l'erreur ci-dessus.
 Mon tableau ne s'affiche pas aussi, car ça me met une autre erreur :
 
-`SQLSTATE[42S02]: Base table or view not found: 1146 Table 'laravel.classification_instrument' doesn't exist (SQL: select `classifications`.\*, `classification_instrument`.`instrument_id` as `pivot_instrument_id`, `classification_instrument`.`classification_id` as `pivot_classification_id` from `classifications` inner join `classification_instrument` on `classifications`.`id` = `classification_instrument`.`classification_id` where `classification_instrument`.`instrument_id` = 15) (View: /var/www/html/evallaravel/resources/views/table.blade.php)`
+`"SQLSTATE[42S02]: Base table or view not found: 1146 Table 'laravel.classification_instrument' doesn't exist (SQL: select `classifications`.\*, `classification_instrument`.`instrument_id` as `pivot_instrument_id`, `classification_instrument`.`classification_id` as `pivot_classification_id` from `classifications` inner join `classification_instrument` on `classifications`.`id` = `classification_instrument`.`classification_id` where `classification_instrument`.`instrument_id` = 15) (View: /var/www/html/evallaravel/resources/views/table.blade.php)"`
 
 J'ai fait le test du dd($request) ... toutes mes variables sont corrects sauf celle de classification et de color, car c'est justement ses deux variables qui mettent une erreur au niveau de l'insertion.
 Rappel : L'insertion se passe correctement bien dans la base de données sauf au niveau de ma table instrument_classification et instrument_color.
